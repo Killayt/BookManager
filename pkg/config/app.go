@@ -3,7 +3,7 @@ package config
 import (
 	"os"
 
-	"gorm.io/gorm"
+	"github.com/jinzhu/gorm"
 )
 
 var (
