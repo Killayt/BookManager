@@ -1,9 +1,8 @@
 package config
 
 import (
-	"os"
-
 	"github.com/jinzhu/gorm"
+	_ "github.com/jinzhu/gorm/dialects/mysql"
 )
 
 var (
@@ -11,7 +10,7 @@ var (
 )
 
 func ConnectDB() {
-	d, err := gorm.Open("mysql", "killayt:"+os.Getenv("BOOK_MANAGER_PASSWORD_DB"+"?charset=utf8&parseTime=True&loc=Local"))
+	d, err := gorm.Open("mysql", "killlayt:js#oa23X)x!@12@/simplerest?charset=utf8&parseTime=True&loc=Local") // Paste your db info here
 	if err != nil {
 		panic(err)
 	}
